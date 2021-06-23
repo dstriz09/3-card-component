@@ -1,0 +1,110 @@
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+}
+
+*,
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: hsl(0, 0%, 95%);
+  padding: 5rem 2rem;
+}
+
+main {
+  display: flex;
+  max-width: 800px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card {
+  background-color: dodgerblue;
+  padding: 3rem;
+  color: hsl(0, 0%, 95%);
+}
+
+img {
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  font-family: "Big Shoulders Display", cursive;
+  margin-bottom: 1.7rem;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  color: hsla(0, 0%, 100%, 0.75);
+  margin-bottom: 4.5rem;
+}
+
+.orange {
+  background-color: var(--bright-orange);
+}
+.orange button {
+  color: var(--bright-orange);
+}
+
+.blue {
+  background-color: var(--dark-cyan);
+}
+
+.blue button {
+  color: var(--dark-cyan);
+}
+
+.teal {
+  background-color: var(--very-dark-cyan);
+}
+
+.teal button {
+  color: var(--very-dark-cyan);
+}
+
+button {
+  width: 140px;
+  padding: 0.7rem 0;
+  border: 2px solid hsl(0, 0%, 95%);
+  border-radius: 50px;
+  font-size: 1rem;
+}
+
+button:hover,
+button:active {
+  background-color: transparent;
+  border: 2px solid hsl(0, 0%, 95%);
+  color: hsl(0, 0%, 95%);
+}
+
+@media only screen and (max-width: 790px) {
+  main {
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    line-height: 1.8rem;
+  }
+
+  button {
+    /* font-size: 1rem; */
+  }
+}
